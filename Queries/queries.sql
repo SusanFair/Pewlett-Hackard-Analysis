@@ -78,6 +78,9 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 
+
+
+
 ## Distinct Quereies
 -- get the unique values in a column
 SELECT DISTINCT customer_id
@@ -91,7 +94,14 @@ SELECT DISTINCT ON (customer_id) customer_id, rental_date
 FROM rental
 ORDER BY customer_id, rental_date DESC;
 
-
+-- SHORTCUTS
+SELECT ri.emp_no,
+    ri.first_name,
+ri.last_name,
+    de.to_date
+FROM retirement_info as ri
+LEFT JOIN dept_empl as de
+ON ri.emp_no = de.emp_no;
 
 
 
@@ -145,11 +155,12 @@ SELECT * FROM retirement_info
 ## JOINING
 ################################
 -- Types:
--- Inner    - only the common items in both tables, default
--- Left     - A + B = All of a, and common with B
--- Right    - A + B = All from B, and common with A
+-- Inner    - only the common records matching in both tables, default
+-- Left     - A + B = All of a, and common from B
+-- Right    - A + B = All from B, and common from A
 -- Cross(Full)    - returns all rows from match
--- Full Outer - All of both tables, if there is a mismatch will insert null values
+-- Full Outer - All of both tables if there is a match from either table
+     --if there is a mismatch will insert null values
 
 SELECT <table>.<column1>, <table>.<column2>
 <table2>.
@@ -176,6 +187,16 @@ JOIN customer AS c
 ON(r.customer_id=c.customer_id)             -- common variable in both tables
 ORDER BY r.customer_id, r.rental_date DESC;
 
+## Complex Queries  with JOIN
+-- Joining departments and dept_manager tables
+-- Joining departments and dept_manager tables
+SELECT departments.dept_name,
+     manager.emp_no,
+     manager.from_date,
+     manager.to_date
+FROM departments
+INNER JOIN manager
+ON departments.dept_no = manager.dept_no;    -- ON where Postgres looks for  matches
 
 
 ## AGGREGATION (Aggregated functions)
@@ -196,7 +217,6 @@ SELECT AVG(rental_duration) As "Avg Rental Period" FROM film
 SELECT SUM(replacement_cost) AS "Cost to Replace Library" FROM film
 
 -- GROUP BY - get avg rental rate grouped by rental duration
--- 
 SELECT AVG(rental_duration) AS "Avg Rental Rate" FROM film 
 GROUP BY rental_duration;
 
