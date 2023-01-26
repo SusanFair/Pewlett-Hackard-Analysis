@@ -60,6 +60,6 @@ In providing the mentorship assessment above an additional query was performed. 
 
 Another aspect of the equation is salaries.  A query to join the retirement_titles with salaries.csv on the emp_no returns some interesting information.  Since those retiring represent alot of senior staff, it also represents a significant $ value in salaries.  
 
-![Role count and salary sum](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_salaries.PNG)
+![Role count and salary sum](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_salary.PNG)
 
 A further query would then be to compare the roles retiring by salary vs those ready for mentorship by salary.  From a business perspective this main be a gain on expenditures after all.
