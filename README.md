@@ -21,7 +21,7 @@ To facilitate this analysis, current records will be uploaded into a newly desig
 *  **Number of retiring staff by Title - Cause for Concern**
 This analysis provided results on employees born between 1952 and 1955 returning their names and most recent/current job titles.   The highest volume of those close to retirement are our Senior Engineers.  This is followed closely by Senior staff in general.  
 
-![By Title](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles_chart.PNG)
+  ![By Title](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles_chart.PNG)
 
 * **Number of retire staff by Title - Silver Lining**
 Conversly Assistant Engineers and Managers represent the fewest number of employees which means that stability at the working level will remain consistent through the retirement tsunami transition.
@@ -53,11 +53,12 @@ Engineers numbers are high in that group.  A mentorship campaign in the engineer
 ### Additional Queries
 In providing the mentorship assessment above an additional query was performed. Using a similar query as was used to gather the unique titles for those ready to retire. We ran a unique titles query on the complete list of those elibible for mentorship.  To drill down we also ran a query to gain a count of the people per each title.  This provided a clear table.  The table was used to provide a color chart that would easily convey the findings.
 
-![Mentorship](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
+      ![Retirement Salaries](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility_table.PNG)
+
+
+  ![Mentorship](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
 
 Another aspect of the equation is salaries.  A query to join the retirement_titles with salaries.csv on the emp_no returns some interesting information.  Since those retiring represent alot of senior staff, it also represents a significant $ value in salaries.  
-
-![Retirement Salaries](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility_table.PNG)
 
 ![Role count and salary sum](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_salaries.PNG)
 
