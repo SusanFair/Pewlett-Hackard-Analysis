@@ -53,7 +53,7 @@ Engineers numbers are high in that group.  A mentorship campaign in the engineer
 ### Additional Queries
 In providing the mentorship assessment above an additional query was performed. Using a similar query as was used to gather the unique titles for those ready to retire. We ran a unique titles query on the complete list of those elibible for mentorship.  To drill down we also ran a query to gain a count of the people per each title.  This provided a clear table.  The table was used to provide a color chart that would easily convey the findings.
 
-  ![Retirement Salaries](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility_table.PNG)
+  ![Retirement Salaries](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility_table2.PNG)
 
 
   ![Mentorship](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
