@@ -46,12 +46,19 @@ The silver lining is that conversly where the rubber hits the road there are sig
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-With so many Senior Staff members retiring the future direction of the company is at stake.  HR has good resources to work with though.  The analysis shows that those who have a good amount of experience and yet are at least 10 years away from retirement are the represent over 500 staff members.  This is certainly something to work with.  
+With so many Senior Staff members retiring the future direction of the company is at stake.  HR has good resources to work with though.  The analysis shows that those who have a good amount of experience and yet are at least 10 years away from retirement are the represent over 1200 staff members in Senior staff and Engineering roles.  This is certainly something to work with.  
 
-Assistent Engineers numbers are high in that group.  A mentorship campaign in the engineering community to share information between the Senior Engineers and the Assistant Engineers will allow the Assistant Engineers to be ready to step up up and fill the vacant roles when the time comes.  All of this without loosing technical continuity.  Also a key for success in a company like Pewlett-Hackard.
+Engineers numbers are high in that group.  A mentorship campaign in the engineering community to share information between the Senior Engineers and the Engineers will allow those in other Engineering roles to be ready to step up and fill the vacant roles when the time comes.  All of this without loosing technical continuity.  Also a key for success in a company like Pewlett-Hackard.
 
-In providing the mentorship assessment above an additional query was performed. Using a similar query as was used to gain the unique titles for those ready to retire, we ran a unique titles query on the complete list of those elibible for mentorship.  To drill down we also ran a query to gain a count of the people per each title.  This provided a clear table.  The table was used to provide a color chart that would easily convey the findings.
+### Additional Queries
+In providing the mentorship assessment above an additional query was performed. Using a similar query as was used to gather the unique titles for those ready to retire. We ran a unique titles query on the complete list of those elibible for mentorship.  To drill down we also ran a query to gain a count of the people per each title.  This provided a clear table.  The table was used to provide a color chart that would easily convey the findings.
 
 ![Mentorship](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility.PNG)
 
-Another aspect of the equation is the salaries.  A query to join the retirement_titles with salaries.csv on the emp_no returns some interesting information.  Since those retiring represent alot of senior staff, it also represents a significant $ value in salaries.  Another query would then be to compare the roles retiring by salary vs those ready for mentorship.  
+Another aspect of the equation is salaries.  A query to join the retirement_titles with salaries.csv on the emp_no returns some interesting information.  Since those retiring represent alot of senior staff, it also represents a significant $ value in salaries.  
+
+![Role count and salary sum](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/retirement_salaries.PNG)
+
+![Retirement Salaries](https://github.com/SusanFair/Pewlett-Hackard-Analysis/blob/main/Resources/mentorship_eligibility_table.PNG)
+  
+A ruther query would then be to compare the roles retiring by salary vs those ready for mentorship by salary.  From a business perspective this main be a gain on expenditures after all.
